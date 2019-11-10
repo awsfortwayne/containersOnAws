@@ -1,0 +1,5 @@
+intro-to-containers/sample-app/.idea/
+intro-to-containers/sample-app/venv/
+intro-to-containers/second-sample-app/.idea/
+intro-to-containers/second-sample-app/venv/
+intro-to-containers/sample-app/__pycache__/
