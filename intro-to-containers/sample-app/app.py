@@ -1,17 +1,23 @@
-from flask import Flask
 import requests
+from flask import Flask
+
 
 app = Flask(__name__)
 
 
-@app.route('/')
+
+
+@app.route('/api')
 def hello():
     return "Hello FW AWS User Group!"
 
-@app.route('/demo')
+@app.route('/api/health')
+def healthcheck():
+    return "Success"
+
+@app.route('/api/demo')
 def callAnotherContainer():
     return requests.get('http://other-container/hello').content
-    
 
 
 if __name__ == '__main__':
